@@ -12,7 +12,7 @@ const sendEmail = async(email:string,subject:string,html:string)=>{
     try{
 
         const {data,error} = await resend.emails.send({
-            from:"onboarding@resend.dev",
+            from:process.env.EMAIL_USER!,
             to:email,
             subject,
             html
