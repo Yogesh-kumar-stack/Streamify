@@ -24,11 +24,6 @@ const Modal = ({close}:{close:()=>void}) => {
                 <span>Home</span>
             </Link>
 
-            <Link to={'/friends'} className="btn btn-ghost hover:btn-neutral justify-start flex items-center gap-3">
-                <UsersIcon className="size-6 text-base-content opacity-80"/>
-                <span>Friends</span>
-            </Link>
-
             <Link to={'/notifications'} className="btn btn-ghost hover:btn-neutral justify-start flex items-center gap-3">
                 <BellIcon className="size-6 text-base-content opacity-80"/>
                 <span>Notifications</span>
