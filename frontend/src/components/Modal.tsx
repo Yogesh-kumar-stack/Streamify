@@ -1,4 +1,4 @@
-import { BellIcon, HomeIcon, UsersIcon, X } from "lucide-react"
+import { BellIcon, HomeIcon, X } from "lucide-react"
 import { Link } from "react-router"
 
 
