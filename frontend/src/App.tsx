@@ -12,7 +12,6 @@ import ProtectRoutes from "./components/protectRoutes"
 import PublicRoute from "./components/PublicRoute"
 import SignupOtpGuard from "./components/SignupOtpGuard"
 import Layout from "./components/Layout"
-import FriendsPage from "./pages/Friends"
 import { useThemeStore } from "./store/useThemeStore"
 
 
@@ -51,13 +50,6 @@ const App = () => {
               </Layout>
             </ProtectRoutes>
          }/>
-         <Route path="/friends" element={
-          <ProtectRoutes>
-            <Layout showSidebar>
-             <FriendsPage/>
-            </Layout>
-          </ProtectRoutes>
-        }/>
         <Route path="/call/:id" element={
           <ProtectRoutes>
             <CallPage/>
